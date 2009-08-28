@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>commands</key>
+	<array>
+		<dict>
+			<key>argument</key>
+			<string>+</string>
+			<key>command</key>
+			<string>insertText:</string>
+		</dict>
+		<dict>
+			<key>argument</key>
+			<string>1</string>
+			<key>command</key>
+			<string>insertText:</string>
+		</dict>
+		<dict>
+			<key>command</key>
+			<string>moveWordLeftAndModifySelection:</string>
+		</dict>
+		<dict>
+			<key>command</key>
+			<string>moveWordLeftAndModifySelection:</string>
+		</dict>
+		<dict>
+			<key>argument</key>
+			<dict>
+				<key>beforeRunningCommand</key>
+				<string>nop</string>
+				<key>command</key>
+				<string>printf "%s" `{ tr -d ,; echo; } | bc -l`| perl -pe 's/(\.[^0]+)0+$|\.0+$/$1/'</string>
+				<key>fallbackInput</key>
+				<string>line</string>
+				<key>input</key>
+				<string>selection</string>
+				<key>keyEquivalent</key>
+				<string>^C</string>
+				<key>name</key>
+				<string>Evaluate and Replace Expression</string>
+				<key>output</key>
+				<string>replaceSelectedText</string>
+				<key>uuid</key>
+				<string>D1DFE75D-EAAD-4662-8F1F-F5556402054B</string>
+			</dict>
+			<key>command</key>
+			<string>executeCommandWithOptions:</string>
+		</dict>
+		<dict>
+			<key>command</key>
+			<string>moveRight:</string>
+		</dict>
+	</array>
+	<key>keyEquivalent</key>
+	<string>^C</string>
+	<key>name</key>
+	<string>Increment Selected Number by 1</string>
+	<key>uuid</key>
+	<string>47929B7A-0DB7-4DC6-9ADF-D249F794305E</string>
+</dict>
+</plist>

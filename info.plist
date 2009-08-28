@@ -4,6 +4,23 @@
 <dict>
 	<key>name</key>
 	<string>Andy Henson’s Bundle</string>
+	<key>ordering</key>
+	<array>
+		<string>09300671-B18C-4529-AB6A-81CF26A33E32</string>
+		<string>3799ADCF-517D-443D-B24E-42DC98E2ABBD</string>
+		<string>AC659AF2-C92C-4721-90A8-DA9B1F2C3B69</string>
+		<string>A9A0C4D4-95DB-47FF-AF4B-806E26E4DE13</string>
+		<string>839E485A-66D2-4010-852B-9FEBA56377BD</string>
+		<string>F6A2959C-2455-4C2A-BE5C-895CF616599E</string>
+		<string>73CA3AFE-9B7D-41A0-BC48-8F0768B250D6</string>
+		<string>3A1DFB27-BAA9-480D-9D58-A3515119CB23</string>
+		<string>8378AD27-2BD9-428E-B103-CEB15B239C16</string>
+		<string>4E560F0E-3044-4D4B-AC72-E7DE709A8D9F</string>
+		<string>6BBFEAAD-B2EC-4320-9C1B-78ED137A6392</string>
+		<string>0A78829E-78FE-4C4B-BBB5-2D9F01F8C21D</string>
+		<string>47929B7A-0DB7-4DC6-9ADF-D249F794305E</string>
+		<string>594205B2-A032-49E5-895C-8F6D1FDB18A8</string>
+	</array>
 	<key>uuid</key>
 	<string>1886BFDB-2497-4FC0-A075-DE33BEDDABDC</string>
 </dict>

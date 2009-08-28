@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>Kind Regards,
+
+Andrew
+--
+Andrew Henson
+Foxsoft Ltd
+</string>
+	<key>name</key>
+	<string>Formal Kind Regards Sig</string>
+	<key>scope</key>
+	<string>text.mail</string>
+	<key>tabTrigger</key>
+	<string>krf</string>
+	<key>uuid</key>
+	<string>73CA3AFE-9B7D-41A0-BC48-8F0768B250D6</string>
+</dict>
+</plist>

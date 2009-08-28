@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>andrew.henson@foxsoft.net</string>
+	<key>name</key>
+	<string>My Foxsoft Email</string>
+	<key>tabTrigger</key>
+	<string>ahe</string>
+	<key>uuid</key>
+	<string>A9A0C4D4-95DB-47FF-AF4B-806E26E4DE13</string>
+</dict>
+</plist>

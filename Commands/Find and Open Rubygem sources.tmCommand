@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/local/bin/ruby
+
+require ENV['TM_SUPPORT_PATH']+"/lib/ui" 
+require 'rubygems'
+
+gems = Gem.source_index.latest_specs.collect {|spec| spec.full_name}.sort
+
+TextMate::UI.request_item(:title =&gt; 'open a gem', :items =&gt; gems) do |selected_gem|
+    gem_path = Gem.source_index.specification(selected_gem).full_gem_path
+    %x{open -a TextMate #{gem_path}}
+end</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>name</key>
+	<string>Find and Open Rubygem sources</string>
+	<key>output</key>
+	<string>replaceSelectedText</string>
+	<key>scope</key>
+	<string>source.ruby</string>
+	<key>uuid</key>
+	<string>3799ADCF-517D-443D-B24E-42DC98E2ABBD</string>
+</dict>
+</plist>
