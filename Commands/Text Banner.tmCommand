@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby -wKU
+print "/*"+("-"*70)+"\n"
+
+if ENV['TM_SELECTED_TEXT'].nil?
+	if ENV['TM_CURRENT_WORD'].nil?
+		print "\t${1:enter title}"
+	else
+		print "\t"+ENV['TM_CURRENT_WORD'].gsub(/\s*/, "").upcase
+	end
+else
+  print "\t"+ENV['TM_SELECTED_TEXT'].upcase
+end
+
+print "\n"+("-"*70)+"*/"</string>
+	<key>fallbackInput</key>
+	<string>word</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>keyEquivalent</key>
+	<string>~@b</string>
+	<key>name</key>
+	<string>Text Banner</string>
+	<key>output</key>
+	<string>insertAsSnippet</string>
+	<key>scope</key>
+	<string>text.plain</string>
+	<key>uuid</key>
+	<string>19AC9024-F46E-4563-82F9-4B80C97BC0F7</string>
+</dict>
+</plist>
